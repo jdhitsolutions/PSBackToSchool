@@ -273,6 +273,7 @@ Diameter Radius    Area
     <maml:alertSet>
       <maml:alert>
         <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/</maml:para>
+        <maml:para>For information about the math behind this function visit https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php.</maml:para>
       </maml:alert>
     </maml:alertSet>
     <command:examples>
@@ -300,10 +301,6 @@ Diameter     Radius   Volume
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php</maml:linkText>
-        <maml:uri>https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
         <maml:linkText>Get-SphereVolume</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
@@ -324,7 +321,7 @@ Diameter     Radius   Volume
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Get-Factorial</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="int">
           <maml:name>Number</maml:name>
           <maml:Description>
             <maml:para>Enter an integer between 1 and 20.</maml:para>
@@ -339,7 +336,7 @@ Diameter     Radius   Volume
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="int">
         <maml:name>Number</maml:name>
         <maml:Description>
           <maml:para>Enter an integer between 1 and 20.</maml:para>
@@ -409,12 +406,7 @@ Int Factorial
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks>
-      <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php</maml:uri>
-      </maml:navigationLink>
-    </command:relatedLinks>
+    <command:relatedLinks />
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -505,7 +497,7 @@ Int Factorial
     </command:returnValues>
     <maml:alertSet>
       <maml:alert>
-        <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/</maml:para>
+        <maml:para>Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/ For information about the math behind this command visit https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php.</maml:para>
       </maml:alert>
     </maml:alertSet>
     <command:examples>
@@ -523,10 +515,6 @@ Diameter Radius  Volume Formatted
       </command:example>
     </command:examples>
     <command:relatedLinks>
-      <maml:navigationLink>
-        <maml:linkText>https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php</maml:linkText>
-        <maml:uri>https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php</maml:uri>
-      </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>Get-CylinderVolume</maml:linkText>
         <maml:uri></maml:uri>
@@ -704,10 +692,6 @@ SideA    SideB Hypotenuse
       </command:example>
     </command:examples>
     <command:relatedLinks>
-      <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php</maml:uri>
-      </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>Get-CircleArea</maml:linkText>
         <maml:uri></maml:uri>

@@ -1,7 +1,7 @@
 ---
 external help file: PSBackToSchool-help.xml
 Module Name: PSBackToSchool
-online version: https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php
+online version:
 schema: 2.0.0
 ---
 
@@ -60,7 +60,7 @@ Enter an integer between 1 and 20.
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: int
 
 Required: True
 Position: 0

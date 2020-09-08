@@ -1,7 +1,7 @@
 ---
 external help file: PSBackToSchool-help.xml
 Module Name: PSBackToSchool
-online version: https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php
+online version:
 schema: 2.0.0
 ---
 
@@ -83,10 +83,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/
+For information about the math behind this command visit https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php.
 
 ## RELATED LINKS
-
-[https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php](https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php)
 
 [Get-CylinderVolume](Get-CylinderVolume.md)
 

@@ -80,6 +80,7 @@ Function Get-Factorial {
     [outputType([INT32])]
     Param(
         [Parameter(Mandatory, ValueFromPipeline, HelpMessage = "Enter a number between 1 and 20")]
+        [alias("int")]
         [int]$Number
     )
 

@@ -1,7 +1,7 @@
 ---
 external help file: PSBackToSchool-help.xml
 Module Name: PSBackToSchool
-online version: https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php
+online version: 
 schema: 2.0.0
 ---
 
