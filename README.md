@@ -2,7 +2,7 @@
 
 ![geek](images/geek-noshadow.png)
 
-This module contains a sample solution to an Iron Scripter PowerShell challenge described at [https://ironscripter.us/powershell-back-to-school-scripting-challenge//](https://ironscripter.us/powershell-back-to-school-scripting-challenge//).
+This module contains a sample solution to an Iron Scripter PowerShell challenge described at [https://ironscripter.us/powershell-back-to-school-scripting-challenge/](https://ironscripter.us/powershell-back-to-school-scripting-challenge/).
 
 ## Custom Formatting
 
@@ -27,10 +27,11 @@ Formatted : 299.14 km³
 Custom formatting is defined in specially formatted XML files, typically with a `.ps1xml` extension. The easiest way to create the file is to use the [New-PSFormatXML](https://github.com/jdhitsolutions/PSScriptTools/blob/master/docs/New-PSFormatXML.md) command from [PSScriptTools](https://github.com/jdhitsolutions/PSScriptTools) module. All you need is a representative object with all of the properties you wish to use.
 
 ```powershell
-Get-CylinderVolume -Diameter 1 -Height 1 | New-PSFormatXML -FormatType Table -GroupBy Form -Properties Diameter,Radius,Formatted -ViewName default -path .\pscylinder.format.ps1xml
+Get-CylinderVolume -Diameter 1 -Height 1 |
+New-PSFormatXML -FormatType Table -GroupBy Form -Properties Diameter,Radius,Formatted -ViewName default -path .\pscylinder.format.ps1xml
 ```
 
-You can then edit the ps1xml file. Click [here](format/pscylinder.format.ps1xml) if you want to see what the format file for this module looks like.
+You can then edit the ps1xml file. Click [here](formats/pscylinder.format.ps1xml) if you want to see what the format file for this module looks like.
 
 ## Help Files
 
@@ -60,4 +61,4 @@ If you want to improve your PowerShell grade, you can clone this repository and 
 
 If you are looking to take your PowerShell scripting to the next level, you might want to grab a copy of [The PowerShell Scripting and Toolmaking Book](https://leanpub.com/powershell-scripting-toolmaking). Or if you are still getting your feet wet with PowerShell and would like to test skills, [The PowerShell Practice Primer](https://leanpub.com/psprimer) may be what you need.
 
-Last updated *2020-09-08 14:05:07Z*.
+Last updated *2020-09-08 14:21:07Z*.
