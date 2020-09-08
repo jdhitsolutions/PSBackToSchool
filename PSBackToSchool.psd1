@@ -12,7 +12,7 @@
 RootModule = 'PSBackToSchool.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '1.0.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -63,23 +63,23 @@ PowerShellVersion = '5.1'
 # TypesToProcess = @()
 
 # Format files (.ps1xml) to be loaded when importing this module
-# FormatsToProcess = @()
+FormatsToProcess = @('formats\pscylinder.format.ps1xml')
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-TriangleLength', 'Get-CircleArea', 'Get-Factorial', 
+FunctionsToExport = 'Get-TriangleLength', 'Get-CircleArea', 'Get-Factorial',
                'Get-SphereVolume', 'Get-CylinderVolume'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+CmdletsToExport = ''
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = ''
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+AliasesToExport = 'gf'
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -96,7 +96,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @("IronScripter","math")
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/jdhitsolutions/PSBackToSchool/blob/master/license.txt'
