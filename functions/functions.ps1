@@ -13,6 +13,7 @@ Function Get-TriangleLength {
 
     Write-Verbose $($myinvocation.mycommand)
     $PSBoundParameters | Out-String | Write-Verbose
+    
     #make sure we have 2 parameters
     $sides = $PSBoundParameters.GetEnumerator() | Where-Object { $_.key -match "^[abcABC]$" }
     if ($sides.count -ne 2) {
@@ -44,9 +45,9 @@ Function Get-TriangleLength {
             SideB      = $B
             Hypotenuse = $C
         }
-    } #else continue
 
-}
+    } #else continue
+} #Get-TriangleLength
 
 Function Get-CircleArea {
     [cmdletbinding()]
@@ -59,7 +60,7 @@ Function Get-CircleArea {
     )
 
     Write-Verbose $($myinvocation.mycommand)
-    Write-Verbose "Calculating area with a diameter of $Diameter"
+    Write-Verbose "Calculating area of a circle with a diameter of $Diameter"
     $pi = [math]::pi
     $r = $Diameter / 2
     Write-Verbose "Using a radius of $r"
@@ -71,8 +72,7 @@ Function Get-CircleArea {
         Radius     = $r
         Area       = [math]::round($area, $decimal)
     }
-
-}
+} #Get-CircleArea
 
 Function Get-Factorial {
     [cmdletbinding()]
@@ -95,7 +95,7 @@ Function Get-Factorial {
     End {
         Write-Verbose "Ending $($myinvocation.mycommand)"
     }
-}
+} #Get-Factorial
 
 Function Get-SphereVolume {
     [cmdletbinding(HelpURI = "https://www.gigacalculator.com/calculators/volume-of-sphere-calculator.php")]
@@ -108,7 +108,7 @@ Function Get-SphereVolume {
     )
 
     Write-Verbose "Starting $($myinvocation.mycommand)"
-    Write-Verbose "Calculating volume with a diameter of $Diameter"
+    Write-Verbose "Calculating volume of a sphere with a diameter of $Diameter"
     $pi = [math]::pi
     $r = $Diameter / 2
     Write-Verbose "Using a radius of $r"
@@ -124,7 +124,7 @@ Function Get-SphereVolume {
         Formatted  = "{0:n$Decimal} cubic units" -f $vol
     }
     Write-Verbose "Ending $($myinvocation.mycommand)"
-}
+} #Get-SphereVolume
 
 Function Get-CylinderVolume {
     [cmdletbinding(HelpURI = "https://www.gigacalculator.com/calculators/volume-of-cylinder-calculator.php")]
@@ -143,7 +143,7 @@ Function Get-CylinderVolume {
     )
 
     Write-Verbose "Starting $($myinvocation.mycommand)"
-    Write-Verbose "Calculating volume with a diameter of $Diameter"
+    Write-Verbose "Calculating volume of a cylinder with a diameter of $Diameter"
     $pi = [math]::pi
     $r = $Diameter / 2
     Write-Verbose "Using a radius of $r"
@@ -162,4 +162,4 @@ Function Get-CylinderVolume {
         Formatted  = "{0:n$Decimal} $unit{1}" -f $vol, [char]0x00b3
     }
     Write-Verbose "Ending $($myinvocation.mycommand)"
-}
+} #Get-CylinderVolume

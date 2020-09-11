@@ -1,5 +1,10 @@
 # Changelog for PSBackToSchool
 
+## v1.1.0
+
++ Minor code reformatting.
++ Minor updates to `README.md`.
+
 ## v1.0.1
 
 + Added an alias of `int` for the `-Integer` parameter in `Get-Factorial`.
